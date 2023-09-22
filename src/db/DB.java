@@ -40,7 +40,7 @@ public class DB {
             props.load(fs);
             return props;
         } catch (IOException e) {
-            throw new DbException(e.getMessage());
+            throw new DbException("Error while Loading Properties! Look: " + e.getMessage());
         }
     }
 
